@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
@@ -15,6 +14,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
 public class WebDriver_Utilities {
 	
@@ -48,7 +48,7 @@ public class WebDriver_Utilities {
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("arguments[0].scrollIntoView()",element);
 	}
-	public String takesScreenShot(WebDriver driver,String screenShotName) throws Throwable
+	public static String takesScreenShot(WebDriver driver,String screenShotName) throws Throwable
 	{
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);

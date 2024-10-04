@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test_package_1.AddJavaCourseTest">
+      <class name="test_package_1.DownloadInvoice">
         <methods>
           <include name="afterTest"/>
           <include name="beforeSuite"/>
-          <include name="addJavaCourseTest"/>
-          <include name="beforeTest"/>
           <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="downloadInvoiceTest"/>
           <include name="afterSuite"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- test_package_1.AddJavaCourseTest -->
+      </class> <!-- test_package_1.DownloadInvoice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

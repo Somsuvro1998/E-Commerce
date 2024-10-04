@@ -8,6 +8,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import generic_utilities.WebDriver_Utilities;
+
 public class HomePage {
 
 	//Initialization of elements
@@ -71,7 +73,8 @@ public class HomePage {
 	}
 	public void openFeedbackInNewTab(WebDriver driver)
 	{
-		Actions action=new Actions(driver);
-		action.keyUp(Keys.CONTROL).click(feedbackLink).keyUp(Keys.CONTROL).perform();
+		WebDriver_Utilities wlib=new WebDriver_Utilities();
+		wlib.OpenLinkInNewTab(driver,feedbackLink );
+		
 	}	
 }
